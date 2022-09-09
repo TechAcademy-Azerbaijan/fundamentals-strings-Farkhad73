@@ -4,6 +4,15 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-    // Write code here
+     let n = result.input
+    let count = 0
+    for(let i = 0; i< n.length; i++){
+    const elemennt = n[i]
+    if(element == " " || element == "!" || element == "," && n[i+1]!==" " ){
+        count++
+    }
+    
+    }
+    console.log(count);
   
 });
